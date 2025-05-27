@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():    
     config_file_teleop = os.path.join(
-        get_package_share_directory('meamr_teleop'),
+        get_package_share_directory('meamr_joystick'),
         'config',
         'js_params.yaml'
     )
@@ -16,7 +16,7 @@ def generate_launch_description():
     teleop_node = Node(
         package='teleop_twist_joy',
         executable='teleop_node',
-        name='meamr_teleop_node',
+        name='meamr_joystick_node',
         output='screen',
         parameters=[ config_file_teleop ],
         remappings=[

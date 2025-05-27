@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>meamr_teleop</name>
+  <name>meamr_joystick</name>
   <version>0.0.0</version>
   <description>Bishop robot teleop</description>
   <maintainer email="itria70463@itri.org.tw">Andres Gaona</maintainer>
