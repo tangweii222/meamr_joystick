@@ -28,11 +28,7 @@ def generate_launch_description():
         executable='joy_node',
         name='joy_node',
         output='screen',
-        # parameters=[{
-        #     'dev': '/dev/ds4joy',
-        #     'deadzone': 0.15,
-        #     'autorepeat_rate': 20.0
-        #     }]
+        parameters=[{'deadzone': 0.15, 'autorepeat_rate': 20.0}]
     )
     
     return LaunchDescription([teleop_node, joy_node])

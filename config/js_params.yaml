@@ -7,4 +7,3 @@ meamr_teleop_node:  # Node name
     scale_angular.yaw: 1.0
     
     enable_button: 4 # Left trigger button
-    # inverted_reverse: True
