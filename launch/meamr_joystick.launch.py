@@ -30,5 +30,13 @@ def generate_launch_description():
         output='screen',
         parameters=[{'deadzone': 0.15, 'autorepeat_rate': 20.0}]
     )
-    
-    return LaunchDescription([teleop_node, joy_node])
+
+    # Custom jot functionality node
+    extra_node = Node(
+        package='meamr_joystick',
+        executable='joystick_extra_node',
+        name='joystick_extra_node',
+        output='screen'
+    )
+
+    return LaunchDescription([teleop_node, joy_node, extra_node])
